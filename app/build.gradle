@@ -42,4 +42,7 @@ dependencies {
 
     // for circular images
     implementation 'de.hdodenhof:circleimageview:3.0.0'
+
+    //swipe refresh
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
 }
