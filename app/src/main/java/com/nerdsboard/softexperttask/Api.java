@@ -18,10 +18,10 @@ public class Api {
 
     private final static String url = "http://demo1585915.mockable.io/api/v1/cars";
 
-    public static void fetchCasData(Context context, final int page,
+    public static void fetchCarData(Context context, final int page,
                                     final Interfaces.getCarsData getCarsDataInterface) {
 
-        HttpCalls.get(context, Api.url+"?page={"+page+"}",  new HttpCalls.OnResponseReceived() {
+        HttpCalls.get(context, Api.url+"?page="+page,  new HttpCalls.OnResponseReceived() {
 
             @Override
             public void onSuccess(String successResponse) {

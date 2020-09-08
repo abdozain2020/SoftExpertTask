@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         int page = 1;
 
-        Api.fetchCasData(MainActivity.this,page, new Interfaces.getCarsData() {
+        Api.fetchCarData(MainActivity.this,page, new Interfaces.getCarsData() {
             @Override
             public void onSuccess(List<Car> carsList) {
                 setupCarsRecyclerView(carsList);
