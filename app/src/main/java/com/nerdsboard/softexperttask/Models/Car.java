@@ -8,10 +8,10 @@ public class Car {
     private String ConstructionYear = "";
 
     public Car(String brand,String status,String imageUrl,String year){
-        this.brand = brand;
-        this.status = status;
-        this.imageUrl = imageUrl;
-        this.ConstructionYear = year;
+        if(!brand.equals("null")){this.brand = brand;}
+        if(!status.equals("null")){this.status = status;}
+        if(!imageUrl.equals("null")){this.imageUrl = imageUrl;}
+        if(!year.equals("null")){ this.ConstructionYear = year;}
     }
 
     public String getBrand(){return brand; }
